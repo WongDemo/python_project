@@ -9,9 +9,9 @@ class Mysql:
         # 配置mysql参数
         self.mysql_config = {
             'mysqluser': "root",
-            'mysqlpassword': "a123456",
+            'mysqlpassword': "123456",
             'mysqlport': 3306,
-            'mysqlhost': '192.168.57.128',
+            'mysqlhost': 'localhost',
             'mysqldb': 'test_project',
             'mysqlcharset': "utf8"
         }
@@ -75,8 +75,8 @@ class Mysql:
 
 
 # 调试代码
-# if __name__ == '__main__':
-#     config.get_config('../lib/conf/conf.txt')
-#     # logger.info(config.config)
-#     mysql = Mysql()
-#     mysql.init_mysql('C:\\Users\\Will\\Desktop\\userinfo.sql')
+if __name__ == '__main__':
+    config.get_config('../lib/conf/conf.txt')
+    # logger.info(config.config)
+    mysql = Mysql()
+    mysql.init_mysql('C:\\Users\\Will\\Desktop\\userinfo.sql')
